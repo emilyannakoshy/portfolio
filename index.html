@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+    <a href="'#" class="logo">MY PORTFOLIO</a>
+        
+
+    
+    
+    
+        <nav class="navbar">
+            <ul>
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About </a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+    </header>   
+        <section class="home">
+            <div class="images">
+                <img src= "https://s3.amazonaws.com/freestock-prod/450/freestock_49936291.jpg" >
+            </div>   
+            <div class="content">
+                <center>
+                    <h1> I'm Emily Anna Koshy</h1>
+                    <h3>Computer Science Engineering Student</h3>
+                    <h5>This is my official portfolio website to shows all<br>details and work experience web development</h5>
+                    <a href="#">DOWNLOAD CV</a>
+                </center>
+        
+            </div>
+        </section>
+        <!-- ----------------about---------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="https://s3.amazonaws.com/freestock-prod/450/freestock_49936291.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <h3>I am a Computer Science Engineering student with a relentless curiosity for technology and a deep passion for problem-solving.
+                            Currently pursuing my degree, I've cultivated a diverse skill set encompassing programming languages, software development, 
+                            and algorithmic thinking. My commitment to innovation drives me to explore emerging technologies like artificial intelligence
+                            and cybersecurity, while my experience in collaborative coding competitions has honed my teamwork and adaptability. As a 
+                            future tech enthusiast, I am excited to leverage my knowledge and skills to contribute to cutting-edge solutions in the 
+                            ever-evolving world of computer science.</h3>
+
+                            <div class="tabtitles">
+                                <h4 class="tablinks active-link" onclick="openTab('education')">Education</h4>
+                                <h4 class="tablinks" onclick="openTab('skills')">Skills</h4>
+                            </div>
+                            <div class="tabcontents active-tab" id="education">
+                                <ul>
+                                    <li><span>2021-current</span><br>Btech degree in computer science at MBCCET Peermade</li>
+                                    <li><span>2018-2020</span><br>12th at St Thomas Hss Erumely</li>
+                                    <li><span>2018</span><br>10th at Santhome Hs Kanamala</li>
+
+
+
+                                </ul>
+                                </div>
+                                <div class="tabcontents" id="skills">
+                                <ul>
+                                    <li><span>proficiency in programming languages C,C++,Java</span></li>
+                                    <li><span>Web development skills in Html and Javascript</span></li>
+                                    <li><span>Understanding of blockchain development</span></li>
+
+
+
+                                </ul>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ----------------------------------------------contact-----------------------------------------------------------? -->
+        
+        
+        <div id="contact">
+            <div class="details">
+                <div class="row">
+                    <div class="col-contact-1">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <div class="tabtitles">
+                            <h2 class="tablinks active-link" onclick="openTab('email')">E-mail</h2>
+                            <h2 class="tablinks" onclick="openTab('address')">Address</h2>
+                            <h2 class="tablinks" onclick="openTab('phoneno')">Phone no</h2>
+
+                        </div>
+                        <div class="tabcontents active-tab" id="email">
+                            <ul>
+                                <li><span>emilyannakoshy@gmail.com</span></li>
+                                
+                            </ul>
+                        
+                        </div>
+                        <div class="tabcontents" id="address">
+                            <ul>
+                                <li><span>Erumely</span></li>
+                            
+                            </ul>
+                    
+                        </div>
+                
+                        <div class="tabcontents" id="phoneno">
+
+                            <ul>
+                                <li><span>1234567891</span></li>
+                    
+                            </ul>
+            
+                
+                        </div>
+                    </div>
+                </div>    
+
+            </div>
+        </div> 
+        
+        <script>
+            let tablinks=document.getElementsByClassName("tablinks");
+            let tabcontents=document.getElementsByClassName("tabcontents");
+            function openTab(tabName){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabName).classList.add("active-tab");
+            }
+        </script>
+
+            
+            
+    </body>
+</html>
